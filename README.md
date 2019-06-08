@@ -4,7 +4,9 @@ int main(){
 	int numero,numero2;
 	
 
-	cout<<"Menu\n 1.Opcion\n 2.Opcion\n 3.Opcion";
+	cout<<"Menu\n 1.Configuracion\n 2.Dinero del cajero 
+	\n 3.Entrada de vehiculo 4.Cajero del parqueo\n 5.Salida de vehiculo\n
+	Ayuda\n Acerca de";
 	cin>>numero;
 	
 	

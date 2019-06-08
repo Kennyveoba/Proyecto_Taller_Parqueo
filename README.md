@@ -3,7 +3,6 @@
 int main(){
 	int numero;
 	
-gcfdhasfgd
 	cout<<"Menu\n 1.Configuracion\n 2.Dinero del cajero \n 3.Entrada de vehiculo\n 4.Cajero del parqueo\n 5.Salida de vehiculo\n 6.Ayuda\n 7.Acerca de";
 	
 	

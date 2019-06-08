@@ -12,14 +12,17 @@ using namespace std;
 
 
 int main()
+int main()
 {
 int numero;
 	
 while(numero != 8){
+	//clrscr
+	system("cls");
 	
-	cout<<"Menu\n 1.Configuracion\n 2.Dinero del cajero \n 3.Entrada de vehiculo\n 4.Cajero del parqueo\n 5.Salida de vehiculo\n 6.Ayuda\n 7.Acerca de\n 8.Salir\n";
+	cout<<"       Menu\n 1.Configuracion\n 2.Dinero del cajero \n 3.Entrada de vehiculo\n 4.Cajero del parqueo\n 5.Salida de vehiculo\n 6.Ayuda\n 7.Acerca de\n 8.Salir\n";
 			
-	cout<<"Ingrese la accion que desea realizar:";
+	cout<<"\n Ingrese la accion que desea realizar:";
 	cin>>numero;
 			
 	switch(numero)

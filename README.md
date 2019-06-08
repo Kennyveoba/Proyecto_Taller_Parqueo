@@ -1,15 +1,13 @@
 # Proyecto_Taller_Parqueo
-#include<iostream>
-
-using namespace std;
 
 int main(){
 	int numero,numero2;
-	cout<<"Digite un numero:";
+	
+
+	cout<<"Menu\n 1.Opcion\n 2.Opcion\n 3.Opcion";
 	cin>>numero;
-	cout<<"Digite un numero:";
-	cin>>numero2;
-	cout<<"El resultado es:"<<numero*numero2;
+	
+	
 	return 0;
 }
 //Esto es un comentaio de una linea

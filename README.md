@@ -12,11 +12,11 @@ using namespace std;
 
 
 int main()
-int main()
 {
 int numero;
 	
-while(numero != 8){
+
+	
 	//clrscr
 	system("cls");
 	
@@ -36,8 +36,9 @@ while(numero != 8){
 			
 		case 2:
 			//clrscr
-				system("cls");
-			cout<<"Dinero del cajero\n";
+			system("cls");
+			cout<<"   Dinero del cajero\n";
+			dinero_del_cajero();
 			system("pause");
 		break;
 			
@@ -88,10 +89,11 @@ while(numero != 8){
 			system("cls");
 			cout<<"ERROR: El dato no es correcto\n";
 			system("pause");
+			main();
 		break;
 			
 	}
-}
+
 	
 return 0;
 }

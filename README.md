@@ -3,13 +3,80 @@ de<iostream>
 #include<cstdlib>
 
 using namespace std;
+//___________________________Dinero_del_cajero___________________________________________________________________________________________________________________
+
+//Funcion Saldo del cajero 
+saldo_del_cajero()
+{
+	int x;
+	cout<<"Saldo del cajero";
+	cin>>x;
+}
+
+//Funcion ingresos_del_cajero
+ingresos_del_cajero()
+{
+	int x;
+	cout<<"Ingresos del cajero";
+	cin>>x;	
+}
 
 
-de<iostream>
-#include<cstdlib>
+//Funcion cargar cajero 
+cargar_cajero()
+{	
+	int x;
+	cout<<"cargar cajero";
+	cin>>x;
+}
 
-using namespace std;
 
+//Funcion dinero del cajero
+dinero_del_cajero()
+{
+	int opcion;
+	system("cls");
+	cout<<"   Dinero del cajero\n";
+	cout<<"\n 1.Cargar cajero\n 2.Saldo del cajero\n 3.Ingresos del cajero\n 4.Atras\n\n Digite la opcion que desea realizar:";
+	cin>>opcion;
+	switch(opcion)
+	{
+		case 1:
+			system("cls");
+			cargar_cajero();
+			dinero_del_cajero();
+		break;
+		
+		case 2:
+			system("cls");
+			saldo_del_cajero();
+			dinero_del_cajero();
+		break;
+		
+		case 3:
+			system("cls");
+			ingresos_del_cajero();
+			dinero_del_cajero();
+		break;
+		
+		case 4:
+			system("cls");
+		break;
+		
+		default:
+			system("cls");
+			cout<<"ERROR: El dato no es correcto\n";
+			//Lama a la funcion principal 
+			system("pause");
+			dinero_del_cajero();
+			
+		break;
+		
+		
+			
+	}
+	
+}
 
 int main()
 {
@@ -29,50 +96,41 @@ switch(numero)
 	case 1:
 		system("cls");
 		cout<<"Configuracion\n";
-		system("pause");
 	break;
 			
 	case 2:
 		system("cls");
-		cout<<"   Dinero del cajero\n";
 		dinero_del_cajero();
-		system("pause");
 	break;
 			
 	case 3:
 		system("cls");
 		cout<<"Entrada de vehiculo\n";
-		system("pause");
 	break;
 			
 	case 4:
 		system("cls");
 		cout<<"Cajero del parqueo\n";
-		system("pause");
 	break;
 			
 	case 5:
 		system("cls");
 		cout<<"Salida de vehiculo\n";
-		system("pause");
 	break;
 			
 	case 6:
 		system("cls");
 		cout<<"Ayuda\n";
-		system("pause");
 	break;
 			
 	case 7:
 		system("cls");
 		cout<<"Acerca de\n";
-		system("pause");
 	break;
 			
 	case 8:
 		system("cls");
-		cout<<"Salir\n";
-		system("pause");
+		return 0;
 	break;
 			
 	default:
@@ -82,10 +140,10 @@ switch(numero)
 		//Lama a la funcion principal 
 		main();
 	break;
-			
+		
 	}	
 
-	
+main();	
 return 0;
 }
 //Esto es un comentaio de una linea

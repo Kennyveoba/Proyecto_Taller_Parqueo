@@ -5,7 +5,7 @@
 using namespace std;
 	
 	
-//Falta documentacion de la funcion de continuar
+//Falta documentacion de la funcion de configurar
 //Variables globales para usar en el programa
 
 

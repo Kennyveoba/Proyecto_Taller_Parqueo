@@ -359,6 +359,18 @@ int configuracion()
 			case 1:
 				cout<<"Confirmo informacion\n";
 				salida=false;
+				precioxhora=precioxhora_config;
+				pago_minimo=pago_minimo_config;
+				redondeo=redondeo_config;
+				min_max=min_max_config;
+				modena_1=modena_1_config;
+				modena_2=modena_2_config;
+				modena_3=modena_3_config;
+				billete_1=billete_1_config;
+				billete_2=billete_2_config;
+				billete_3=billete_3_config;
+				billete_4=billete_4_config;
+				billete_5=billete_5_config;
 				system("pause");
 				
 			break;

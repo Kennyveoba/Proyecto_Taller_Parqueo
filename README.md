@@ -574,26 +574,6 @@ cargar_cajero()
 	
 		
 	int accion;
-	// aquí se esan estas varibales pero al agregar el principal se borran ya que son las que el usuario ingresa
-	int moneda_1;
-	int moneda_2;
-	int moneda_3;
-	
-	int billete_1;
-	int billete_2;
-	int billete_3;
-	int billete_4;
-	int billete_5;
-	
-	moneda_1=50;
-	moneda_2=100;
-	moneda_3=500;
-	billete_1=1000;
-	billete_2=2000;
-	billete_3=5000;
-	billete_4=10000;
-	billete_5=20000;
-	
 	
 	// un while para que cargue el menú las veces que el quiera cargar el cajero, es decir, hasta que confirme.
 	bool accion_carga;

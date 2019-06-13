@@ -572,8 +572,7 @@ cargar_cajero()
 	//-------------------------------------//
 	
 	
-		
-	int accion;
+	int accion;	
 	
 	// un while para que cargue el menú las veces que el quiera cargar el cajero, es decir, hasta que confirme.
 	bool accion_carga;
@@ -591,13 +590,17 @@ cargar_cajero()
 		cout<<"\n Moneda de: "<< moneda_1<<"          "<<antes_cantidad_moneda_1_cargar<<"         "<<antes_total_moneda_1_cargar;
 		cout<<"\n Moneda de: "<< moneda_2<<"          " <<antes_cantidad_moneda_2_cargar<<"         "<<antes_total_moneda_2_cargar;
 		cout<<"\n Moneda de: "<< moneda_3<<"          "<<antes_cantidad_moneda_3_cargar<<"         "<<antes_total_moneda_3_cargar;
-		cout<<"\n Total de monedas:        "<<antes_cantidad_moneda_total_cargar<<"         "<<antes_total_moneda_total_cargar;
+		cout<<"\n";
+		cout<<"\n Total de monedas:     "<<antes_cantidad_moneda_total_cargar<<"         "<<antes_total_moneda_total_cargar;
+		cout<<"\n";
 		cout<<"\n Billete de: "<< billete_1<<"         "<<antes_cantidad_billete_1_cargar<<"         "<<antes_total_billete_1_cargar;
 		cout<<"\n Billete de: "<< billete_2<<"         "<<antes_cantidad_billete_2_cargar<<"         "<<antes_total_billete_2_cargar;
 		cout<<"\n Billete de: "<< billete_3<<"         "<<antes_cantidad_billete_3_cargar<<"         "<<antes_total_billete_3_cargar;
 		cout<<"\n Billete de: "<< billete_4<<"         "<<antes_cantidad_billete_4_cargar<<"         "<<antes_total_billete_4_cargar;
 		cout<<"\n Billete de: "<< billete_5<<"         "<<antes_cantidad_billete_5_cargar<<"         "<<antes_total_billete_5_cargar;
-		cout<<"\n Total de billetes:       "<<antes_cantidad_billete_total_cargar<<"         "<<antes_total_billete_total_cargar;
+		cout<<"\n";
+		cout<<"\n Total de billetes:    "<<antes_cantidad_billete_total_cargar<<"         "<<antes_total_billete_total_cargar;
+		cout<<"\n";
 		cout<<"\n";
 		cout<<"\n TOTAL DEL DINERO  ------------->   "<<(antes_total_billete_total_cargar+antes_total_moneda_total_cargar);
 		cout<<"\n";
@@ -611,13 +614,17 @@ cargar_cajero()
 		cout<<"\n Moneda de: "<< moneda_1<<"          "<<saldo_cantidad_moneda_1_cargar<<"         "<<saldo_total_moneda_1_cargar;
 		cout<<"\n Moneda de: "<< moneda_2<<"          " <<saldo_cantidad_moneda_2_cargar<<"         "<<saldo_total_moneda_2_cargar;
 		cout<<"\n Moneda de: "<< moneda_3<<"          "<<saldo_cantidad_moneda_3_cargar<<"         "<<saldo_total_moneda_3_cargar;
-		cout<<"\n Total de monedas:        "<<saldo_cantidad_moneda_total_cargar<<"         "<<saldo_total_moneda_total_cargar;
+		cout<<"\n";
+		cout<<"\n Total de monedas:     "<<saldo_cantidad_moneda_total_cargar<<"      "<<saldo_total_moneda_total_cargar;
+		cout<<"\n";
 		cout<<"\n Billete de: "<< billete_1<<"         "<<saldo_cantidad_billete_1_cargar<<"         "<<saldo_total_billete_1_cargar;
 		cout<<"\n Billete de: "<< billete_2<<"         "<<saldo_cantidad_billete_2_cargar<<"         "<<saldo_total_billete_2_cargar;
 		cout<<"\n Billete de: "<< billete_3<<"         "<<saldo_cantidad_billete_3_cargar<<"         "<<saldo_total_billete_3_cargar;
 		cout<<"\n Billete de: "<< billete_4<<"         "<<saldo_cantidad_billete_4_cargar<<"         "<<saldo_total_billete_4_cargar;
 		cout<<"\n Billete de: "<< billete_5<<"         "<<saldo_cantidad_billete_5_cargar<<"         "<<saldo_total_billete_5_cargar;
-		cout<<"\n Total de billetes:       "<<saldo_cantidad_billete_total_cargar<<"         "<<saldo_total_billete_total_cargar;
+		cout<<"\n";
+		cout<<"\n Total de billetes:    "<<saldo_cantidad_billete_total_cargar<<"      "<<saldo_total_billete_total_cargar;
+		cout<<"\n";
 		cout<<"\n";
 		cout<<"\n TOTAL DEL DINERO  ------------->  "<<(saldo_total_billete_total_cargar+saldo_total_moneda_total_cargar);
 		cout<<"\n";
@@ -1088,13 +1095,17 @@ cargar_cajero()
 				cout<<"\n Moneda de: "<< moneda_1<<"          "<<saldo_cantidad_moneda_1<<"         "<<saldo_total_moneda_1;
 				cout<<"\n Moneda de: "<< moneda_2<<"          " <<saldo_cantidad_moneda_2<<"         "<<saldo_total_moneda_2;
 				cout<<"\n Moneda de: "<< moneda_3<<"          "<<saldo_cantidad_moneda_3<<"         "<<saldo_total_moneda_3;
-				cout<<"\n Total de monedas:        "<<saldo_cantidad_moneda_total<<"         "<<saldo_total_moneda_total;
+				cout<<"\n";
+				cout<<"\n Total de monedas:     "<<saldo_cantidad_moneda_total<<"         "<<saldo_total_moneda_total;
+				cout<<"\n";
 				cout<<"\n Billete de: "<< billete_1<<"         "<<saldo_cantidad_billete_1<<"         "<<saldo_total_billete_1;
 				cout<<"\n Billete de: "<< billete_2<<"         "<<saldo_cantidad_billete_2<<"         "<<saldo_total_billete_2;
 				cout<<"\n Billete de: "<< billete_3<<"         "<<saldo_cantidad_billete_3<<"         "<<saldo_total_billete_3;
 				cout<<"\n Billete de: "<< billete_4<<"         "<<saldo_cantidad_billete_4<<"         "<<saldo_total_billete_4;
 				cout<<"\n Billete de: "<< billete_5<<"         "<<saldo_cantidad_billete_5<<"         "<<saldo_total_billete_5;
-				cout<<"\n Total de billetes:       "<<saldo_cantidad_billete_total<<"         "<<saldo_total_billete_total;
+				cout<<"\n";
+				cout<<"\n Total de billetes:    "<<saldo_cantidad_billete_total<<"         "<<saldo_total_billete_total;
+				cout<<"\n";
 				cout<<"\n";
 				cout<<"\n TOTAL DEL DINERO  ------------->  "<<(saldo_total_billete_total+saldo_total_moneda_total);
 				cout<<"\n";
@@ -1117,13 +1128,17 @@ cargar_cajero()
 				cout<<"\n Moneda de: "<< moneda_1<<"          "<<saldo_cantidad_moneda_1<<"         "<<saldo_total_moneda_1;
 				cout<<"\n Moneda de: "<< moneda_2<<"          " <<saldo_cantidad_moneda_2<<"         "<<saldo_total_moneda_2;
 				cout<<"\n Moneda de: "<< moneda_3<<"          "<<saldo_cantidad_moneda_3<<"         "<<saldo_total_moneda_3;
-				cout<<"\n Total de monedas:        "<<saldo_cantidad_moneda_total<<"         "<<saldo_total_moneda_total;
+				cout<<"\n";
+				cout<<"\n Total de monedas:     "<<saldo_cantidad_moneda_total<<"         "<<saldo_total_moneda_total;
+				cout<<"\n";
 				cout<<"\n Billete de: "<< billete_1<<"         "<<saldo_cantidad_billete_1<<"         "<<saldo_total_billete_1;
 				cout<<"\n Billete de: "<< billete_2<<"         "<<saldo_cantidad_billete_2<<"         "<<saldo_total_billete_2;
 				cout<<"\n Billete de: "<< billete_3<<"         "<<saldo_cantidad_billete_3<<"         "<<saldo_total_billete_3;
 				cout<<"\n Billete de: "<< billete_4<<"         "<<saldo_cantidad_billete_4<<"         "<<saldo_total_billete_4;
 				cout<<"\n Billete de: "<< billete_5<<"         "<<saldo_cantidad_billete_5<<"         "<<saldo_total_billete_5;
-				cout<<"\n Total de billetes:       "<<saldo_cantidad_billete_total<<"         "<<saldo_total_billete_total;
+				cout<<"\n";
+				cout<<"\n Total de billetes:    "<<saldo_cantidad_billete_total<<"         "<<saldo_total_billete_total;
+				cout<<"\n";
 				cout<<"\n";
 				cout<<"\n TOTAL DEL DINERO  ------------->  "<<(saldo_total_billete_total+saldo_total_moneda_total);
 				cout<<"\n";

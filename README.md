@@ -3,7 +3,33 @@
 #include<iostream>
 #include<vector>
 using namespace std;
-	
+//.................Variables GLOBLAES PARA EL SALDO.....................
+
+// ........SE LE ASIGNA EL VALOR INICIAL DE 0........
+
+int saldo_total_moneda_1 = 0;
+int saldo_total_moneda_2 = 0;
+int saldo_total_moneda_3 = 0;
+int saldo_total_moneda_total = 0;
+int saldo_total_billete_1 = 0;
+int saldo_total_billete_2 = 0;
+int saldo_total_billete_3 = 0;
+int saldo_total_billete_4 = 0;
+int saldo_total_billete_5 = 0;
+int saldo_total_billete_total = 0;
+
+int saldo_cantidad_moneda_1 = 0;
+int saldo_cantidad_moneda_2 = 0;
+int saldo_cantidad_moneda_3 = 0;
+int saldo_cantidad_moneda_total = 0;
+int saldo_cantidad_billete_1 = 0;
+int saldo_cantidad_billete_2 = 0;
+int saldo_cantidad_billete_3 = 0;
+int saldo_cantidad_billete_4 = 0;
+int saldo_cantidad_billete_5 = 0;
+int saldo_cantidad_billete_total = 0;
+
+
 	
 //Falta documentacion de la funcion de configurar
 //Variables globales para usar en el programa
@@ -416,9 +442,733 @@ ingresos_del_cajero()
 //Funcion cargar cajero 
 cargar_cajero()
 {	
-	int x;
-	cout<<"cargar cajero";
-	cin>>x;
+	// Variables Para cargar cajero 
+	
+	//-------------------------Varibales de saldo locales-------------------------//
+	int saldo_total_moneda_1_cargar;
+	int saldo_total_moneda_2_cargar;
+	int saldo_total_moneda_3_cargar;
+	int saldo_total_moneda_total_cargar;
+	int saldo_total_billete_1_cargar;
+	int saldo_total_billete_2_cargar;
+	int saldo_total_billete_3_cargar;
+	int saldo_total_billete_4_cargar;
+	int saldo_total_billete_5_cargar;
+	int saldo_total_billete_total_cargar;
+	
+	int saldo_cantidad_moneda_1_cargar;
+	int saldo_cantidad_moneda_2_cargar;
+	int saldo_cantidad_moneda_3_cargar;
+	int saldo_cantidad_moneda_total_cargar;
+	int saldo_cantidad_billete_1_cargar;
+	int saldo_cantidad_billete_2_cargar;
+	int saldo_cantidad_billete_3_cargar;
+	int saldo_cantidad_billete_4_cargar;
+	int saldo_cantidad_billete_5_cargar;
+	int saldo_cantidad_billete_total_cargar;
+	
+	//......SE ASIGNA EL VALOR DE LA GLOBAL DE SALDO......//
+	
+	saldo_total_moneda_1_cargar = saldo_total_moneda_1;
+	saldo_total_moneda_2_cargar = saldo_total_moneda_2;
+	saldo_total_moneda_3_cargar = saldo_total_moneda_3;
+	saldo_total_moneda_total_cargar = saldo_total_moneda_total;
+	saldo_total_billete_1_cargar = saldo_total_billete_1;
+	saldo_total_billete_2_cargar = saldo_total_billete_2;
+	saldo_total_billete_3_cargar = saldo_total_billete_3;
+	saldo_total_billete_4_cargar = saldo_total_billete_4;
+	saldo_total_billete_5_cargar = saldo_total_billete_5;
+	saldo_total_billete_total_cargar = saldo_total_billete_total ;
+	
+	saldo_cantidad_moneda_1_cargar = saldo_cantidad_moneda_1;
+	saldo_cantidad_moneda_2_cargar = saldo_cantidad_moneda_2;
+	saldo_cantidad_moneda_3_cargar = saldo_cantidad_moneda_3;
+	saldo_cantidad_moneda_total_cargar = saldo_cantidad_moneda_total;
+	saldo_cantidad_billete_1_cargar = saldo_cantidad_billete_1;
+	saldo_cantidad_billete_2_cargar = saldo_cantidad_billete_2;
+	saldo_cantidad_billete_3_cargar = saldo_cantidad_billete_3;
+	saldo_cantidad_billete_4_cargar = saldo_cantidad_billete_4;
+	saldo_cantidad_billete_5_cargar = saldo_cantidad_billete_5;
+	saldo_cantidad_billete_total_cargar= saldo_cantidad_billete_total;
+
+	
+	//-------------------------Varibales de saldo antes locales-------------------------//
+	
+	int antes_total_moneda_1_cargar;
+	int antes_total_moneda_2_cargar;
+	int antes_total_moneda_3_cargar;
+	int antes_total_moneda_total_cargar;
+	int antes_total_billete_1_cargar;
+	int antes_total_billete_2_cargar;
+	int antes_total_billete_3_cargar;
+	int antes_total_billete_4_cargar;
+	int antes_total_billete_5_cargar;
+	int antes_total_billete_total_cargar;
+	
+	int antes_cantidad_moneda_1_cargar;
+	int antes_cantidad_moneda_2_cargar;
+	int antes_cantidad_moneda_3_cargar;
+	int antes_cantidad_moneda_total_cargar;
+	int antes_cantidad_billete_1_cargar;
+	int antes_cantidad_billete_2_cargar;
+	int antes_cantidad_billete_3_cargar;
+	int antes_cantidad_billete_4_cargar;
+	int antes_cantidad_billete_5_cargar;
+	int antes_cantidad_billete_total_cargar;
+	
+	//......SE ASIGNA EL VALOR DE LA GLOBAL DE SALDO......//
+	
+	
+	antes_total_moneda_1_cargar = saldo_total_moneda_1;
+	antes_total_moneda_2_cargar = saldo_total_moneda_2;
+	antes_total_moneda_3_cargar = saldo_total_moneda_3;
+	antes_total_moneda_total_cargar = saldo_total_moneda_total;
+	antes_total_billete_1_cargar = saldo_total_billete_1;
+	antes_total_billete_2_cargar = saldo_total_billete_2;
+	antes_total_billete_3_cargar = saldo_total_billete_3;
+	antes_total_billete_4_cargar = saldo_total_billete_4;
+	antes_total_billete_5_cargar = saldo_total_billete_5;
+	antes_total_billete_total_cargar = saldo_total_billete_total ;
+	
+	antes_cantidad_moneda_1_cargar = saldo_cantidad_moneda_1;
+	antes_cantidad_moneda_2_cargar = saldo_cantidad_moneda_2;
+	antes_cantidad_moneda_3_cargar = saldo_cantidad_moneda_3;
+	antes_cantidad_moneda_total_cargar = saldo_cantidad_moneda_total;
+	antes_cantidad_billete_1_cargar = saldo_cantidad_billete_1;
+	antes_cantidad_billete_2_cargar = saldo_cantidad_billete_2;
+	antes_cantidad_billete_3_cargar = saldo_cantidad_billete_3;
+	antes_cantidad_billete_4_cargar = saldo_cantidad_billete_4;
+	antes_cantidad_billete_5_cargar = saldo_cantidad_billete_5;
+	antes_cantidad_billete_total_cargar= saldo_cantidad_billete_total;
+
+	
+	
+	//-------------------------Varibales de carga locales-------------------------//
+	
+	int carga_total_moneda_1_cargar=0;
+	int carga_total_moneda_2_cargar=0;
+	int carga_total_moneda_3_cargar=0;
+	int carga_total_moneda_total_cargar=0;
+	int carga_total_billete_1_cargar=0;
+	int carga_total_billete_2_cargar=0;
+	int carga_total_billete_3_cargar=0;
+	int carga_total_billete_4_cargar=0;
+	int carga_total_billete_5_cargar=0;
+	int carga_total_billete_total_cargar=0;
+	
+	int carga_cantidad_moneda_1_cargar=0;
+	int carga_cantidad_moneda_2_cargar=0;
+	int carga_cantidad_moneda_3_cargar=0;
+	int carga_cantidad_moneda_total_cargar=0;
+	int carga_cantidad_billete_1_cargar=0;
+	int carga_cantidad_billete_2_cargar=0;
+	int carga_cantidad_billete_3_cargar=0;
+	int carga_cantidad_billete_4_cargar=0;
+	int carga_cantidad_billete_5_cargar=0;
+	int carga_cantidad_billete_total_cargar=0;
+
+
+
+	//-------------------------------------//
+	
+	
+		
+	int accion;
+	// aquí se esan estas varibales pero al agregar el principal se borran ya que son las que el usuario ingresa
+	int moneda_1;
+	int moneda_2;
+	int moneda_3;
+	
+	int billete_1;
+	int billete_2;
+	int billete_3;
+	int billete_4;
+	int billete_5;
+	
+	moneda_1=50;
+	moneda_2=100;
+	moneda_3=500;
+	billete_1=1000;
+	billete_2=2000;
+	billete_3=5000;
+	billete_4=10000;
+	billete_5=20000;
+	
+	
+	// un while para que cargue el menú las veces que el quiera cargar el cajero, es decir, hasta que confirme.
+	bool accion_carga;
+	accion_carga=true;
+	while(accion_carga==true)
+	{	
+		//Elimina todas las cosas que se imprimieron 
+		system("cls");
+		
+		
+		// Muestra la cantidad de saldo antes de la carga. 
+		cout<<"__________________SALDO ANTE DE HACER LA CARGA__________________\n";
+		cout<<"                    CANTIDAD     TOTAL";	
+		cout<<"\n";	
+		cout<<"\n Moneda de: "<< moneda_1<<"          "<<antes_cantidad_moneda_1_cargar<<"         "<<antes_total_moneda_1_cargar;
+		cout<<"\n Moneda de: "<< moneda_2<<"          " <<antes_cantidad_moneda_2_cargar<<"         "<<antes_total_moneda_2_cargar;
+		cout<<"\n Moneda de: "<< moneda_3<<"          "<<antes_cantidad_moneda_3_cargar<<"         "<<antes_total_moneda_3_cargar;
+		cout<<"\n Total de monedas:        "<<antes_cantidad_moneda_total_cargar<<"         "<<antes_total_moneda_total_cargar;
+		cout<<"\n Billete de: "<< billete_1<<"         "<<antes_cantidad_billete_1_cargar<<"         "<<antes_total_billete_1_cargar;
+		cout<<"\n Billete de: "<< billete_2<<"         "<<antes_cantidad_billete_2_cargar<<"         "<<antes_total_billete_2_cargar;
+		cout<<"\n Billete de: "<< billete_3<<"         "<<antes_cantidad_billete_3_cargar<<"         "<<antes_total_billete_3_cargar;
+		cout<<"\n Billete de: "<< billete_4<<"         "<<antes_cantidad_billete_4_cargar<<"         "<<antes_total_billete_4_cargar;
+		cout<<"\n Billete de: "<< billete_5<<"         "<<antes_cantidad_billete_5_cargar<<"         "<<antes_total_billete_5_cargar;
+		cout<<"\n Total de billetes:       "<<antes_cantidad_billete_total_cargar<<"         "<<antes_total_billete_total_cargar;
+		cout<<"\n";
+		cout<<"\n TOTAL DEL DINERO  ------------->   "<<(antes_total_billete_total_cargar+antes_total_moneda_total_cargar);
+		cout<<"\n";
+		cout<<"\n";
+		system("pause");
+		
+		cout<<"\n";
+		cout<<"__________________SALDO SI ES REALIZA LA CARGA__________________\n";
+		cout<<"                    CANTIDAD     TOTAL";	
+		cout<<"\n";	
+		cout<<"\n Moneda de: "<< moneda_1<<"          "<<saldo_cantidad_moneda_1_cargar<<"         "<<saldo_total_moneda_1_cargar;
+		cout<<"\n Moneda de: "<< moneda_2<<"          " <<saldo_cantidad_moneda_2_cargar<<"         "<<saldo_total_moneda_2_cargar;
+		cout<<"\n Moneda de: "<< moneda_3<<"          "<<saldo_cantidad_moneda_3_cargar<<"         "<<saldo_total_moneda_3_cargar;
+		cout<<"\n Total de monedas:        "<<saldo_cantidad_moneda_total_cargar<<"         "<<saldo_total_moneda_total_cargar;
+		cout<<"\n Billete de: "<< billete_1<<"         "<<saldo_cantidad_billete_1_cargar<<"         "<<saldo_total_billete_1_cargar;
+		cout<<"\n Billete de: "<< billete_2<<"         "<<saldo_cantidad_billete_2_cargar<<"         "<<saldo_total_billete_2_cargar;
+		cout<<"\n Billete de: "<< billete_3<<"         "<<saldo_cantidad_billete_3_cargar<<"         "<<saldo_total_billete_3_cargar;
+		cout<<"\n Billete de: "<< billete_4<<"         "<<saldo_cantidad_billete_4_cargar<<"         "<<saldo_total_billete_4_cargar;
+		cout<<"\n Billete de: "<< billete_5<<"         "<<saldo_cantidad_billete_5_cargar<<"         "<<saldo_total_billete_5_cargar;
+		cout<<"\n Total de billetes:       "<<saldo_cantidad_billete_total_cargar<<"         "<<saldo_total_billete_total_cargar;
+		cout<<"\n";
+		cout<<"\n TOTAL DEL DINERO  ------------->  "<<(saldo_total_billete_total_cargar+saldo_total_moneda_total_cargar);
+		cout<<"\n";
+		cout<<"\n";
+		system("pause");
+		
+		 
+		cout<<"\n";	
+		cout<<"\n";		
+		cout<<"       Carga\n 1--> Moneda de: "<< moneda_1<< "\n 2--> Moneda de: "<< moneda_2<< "\n 3--> Moneda de: "<< moneda_3<< "\n 4--> Billete de: "<< billete_1<< "\n 5--> Billete de: "<< billete_2<< "\n 6--> Billete de: "<< billete_3<< "\n 7--> Billete de: "<< billete_4<< "\n 8--> Billete de: "<< billete_5<< "\n 9--> Confirmar. \n 10--> Cancelar.";                                  
+		cout<<"\n";			
+		cout<<"\n Ingrese la accion que desea realizar: ";
+		cin>>accion;
+		
+		/* en cada caso va a llevar un cout del total y cantidad de esa moneda ( de la carga ), 
+		los valores de que va a agregar, 
+		las opciones de confimar esa carga y 
+		luego un cout del monto total de variable si confimar el monto
+		*/
+		
+		int cantidad_de_carga;
+		cantidad_de_carga=0;			
+		switch(accion)
+		{
+			bool bucle_accion_carga_monto;
+			int accion_carga_monto;
+			case 1:
+				system("cls");
+				cout<<"Moneda de: "<< moneda_1<<".\n";
+				cout<<"Valores en carga:"<<"        "<<"Cantidad: "<<carga_cantidad_moneda_1_cargar<<"   Total: "<<carga_total_moneda_1_cargar;
+				cout<<"\n";
+				system("pause");
+				cout<<"\nCantidad que desea cargar: ";
+				cin>>cantidad_de_carga;
+				cout<<"\nTotal de la carga : "<<(cantidad_de_carga*moneda_1);
+				bucle_accion_carga_monto=true;
+				while (bucle_accion_carga_monto==true)
+				{
+					cout<<"\nDesea confirmar la carga:\n 1---> SI.\n 2---> NO.";
+					cout<<"\n";
+					cout<<"\nAccion a realizar: ";
+					cin>>accion_carga_monto;
+					switch(accion_carga_monto)
+					{
+						case 1:
+							cout<<"\nSe realizaron los cambios";
+							carga_cantidad_moneda_1_cargar=carga_cantidad_moneda_1_cargar+cantidad_de_carga;
+							carga_total_moneda_1_cargar=(carga_cantidad_moneda_1_cargar*moneda_1);
+							
+							saldo_cantidad_moneda_1_cargar = (carga_cantidad_moneda_1_cargar);
+							saldo_total_moneda_1_cargar = ((saldo_cantidad_moneda_1_cargar*moneda_1));
+							
+							bucle_accion_carga_monto=false;
+							cout<<"\n";
+							system("pause");
+						break;
+						
+						case 2:
+							cout<<"\nSe cancelaron los cambios";
+							bucle_accion_carga_monto=false;
+							cout<<"\n";
+							system("pause");
+						break;
+						
+						default:
+							system("cls");
+							cout<<"\nERROR: Selecione alguna de las opciones.";
+							cout<<"\n";
+							system("pause");
+							
+						break;
+					}
+				}	
+				
+			break;
+					
+			case 2:
+				system("cls");
+				cout<<"Moneda de: "<< moneda_2<<".\n";
+				cout<<"Valores en carga:"<<"        "<<"Cantidad: "<<carga_cantidad_moneda_2_cargar<<"   Total: "<<carga_total_moneda_2_cargar;
+				cout<<"\n";
+				system("pause");
+				cout<<"\nCantidad que desea cargar: ";
+				cin>>cantidad_de_carga;
+				cout<<"\nTotal de la carga : "<<(cantidad_de_carga*moneda_2);
+				bucle_accion_carga_monto=true;
+				while (bucle_accion_carga_monto==true)
+				{
+					cout<<"\nDesea confirmar la carga:\n 1---> SI.\n 2---> NO.";
+					cout<<"\n";
+					cout<<"\nAccion a realizar: ";
+					cin>>accion_carga_monto;
+					switch(accion_carga_monto)
+					{
+						case 1:
+							cout<<"\nSe realizaron los cambios";
+							carga_cantidad_moneda_2_cargar=carga_cantidad_moneda_2_cargar+cantidad_de_carga;
+							carga_total_moneda_2_cargar=(carga_cantidad_moneda_2_cargar*moneda_2);
+							
+							
+							saldo_cantidad_moneda_2_cargar = (carga_cantidad_moneda_2_cargar);
+							saldo_total_moneda_2_cargar = ((saldo_cantidad_moneda_2_cargar*moneda_2));
+	
+					
+							
+							bucle_accion_carga_monto=false;
+							cout<<"\n";
+							system("pause");
+						break;
+						
+						case 2:
+							cout<<"\nSe cancelaron los cambios";
+							bucle_accion_carga_monto=false;
+							cout<<"\n";
+							system("pause");
+						break;
+						
+						default:
+							system("cls");
+							cout<<"\nERROR: Selecione alguna de las opciones.";
+							cout<<"\n";
+							system("pause");
+							
+						break;
+					}
+				}	
+			break;
+					
+			case 3:
+				system("cls");
+				cout<<"Moneda de: "<< moneda_3<<".\n";
+				cout<<"Valores en carga:"<<"        "<<"Cantidad: "<<carga_cantidad_moneda_3_cargar<<"   Total: "<<carga_total_moneda_3_cargar;
+				cout<<"\n";
+				system("pause");
+				cout<<"\nCantidad que desea cargar: ";
+				cin>>cantidad_de_carga;
+				cout<<"\nTotal de la carga : "<<(cantidad_de_carga*moneda_3);
+				bucle_accion_carga_monto=true;
+				while (bucle_accion_carga_monto==true)
+				{
+					cout<<"\nDesea confirmar la carga:\n 1---> SI.\n 2---> NO.";
+					cout<<"\n";
+					cout<<"\nAccion a realizar: ";
+					cin>>accion_carga_monto;
+					switch(accion_carga_monto)
+					{
+						case 1:
+							cout<<"\nSe realizaron los cambios";
+							carga_cantidad_moneda_3_cargar=carga_cantidad_moneda_3_cargar+cantidad_de_carga;
+							carga_total_moneda_3_cargar=(carga_cantidad_moneda_3_cargar*moneda_3);
+							
+							saldo_cantidad_moneda_3_cargar = (carga_cantidad_moneda_3_cargar);
+							saldo_total_moneda_3_cargar = ((saldo_cantidad_moneda_3_cargar*moneda_3));
+						
+							
+							bucle_accion_carga_monto=false;
+							cout<<"\n";
+							system("pause");
+						break;
+						
+						case 2:
+							cout<<"\nSe cancelaron los cambios";
+							bucle_accion_carga_monto=false;
+							cout<<"\n";
+							system("pause");
+						break;
+						
+						default:
+							system("cls");
+							cout<<"\nERROR: Selecione alguna de las opciones.";
+							cout<<"\n";
+							system("pause");
+							
+						break;
+					}
+				}	
+			break;
+					
+			case 4:
+				system("cls");
+				cout<<"Billete de: "<< billete_1<<".\n";
+				cout<<"Valores en carga:"<<"        "<<"Cantidad: "<<carga_cantidad_billete_1_cargar<<"   Total: "<<carga_total_billete_1_cargar;
+				cout<<"\n";
+				system("pause");
+				cout<<"\nCantidad que desea cargar: ";
+				cin>>cantidad_de_carga;
+				cout<<"\nTotal de la carga : "<<(cantidad_de_carga*billete_1);
+				bucle_accion_carga_monto=true;
+				while (bucle_accion_carga_monto==true)
+				{
+					cout<<"\nDesea confirmar la carga:\n 1---> SI.\n 2---> NO.";
+					cout<<"\n";
+					cout<<"\nAccion a realizar: ";
+					cin>>accion_carga_monto;
+					switch(accion_carga_monto)
+					{
+						case 1:
+							cout<<"\nSe realizaron los cambios";
+							carga_cantidad_billete_1_cargar=carga_cantidad_billete_1_cargar+cantidad_de_carga;
+							carga_total_billete_1_cargar=(carga_cantidad_billete_1_cargar*billete_1);
+							
+							saldo_cantidad_billete_1_cargar =(carga_cantidad_billete_1_cargar) ;
+							saldo_total_billete_1_cargar =((saldo_cantidad_billete_1_cargar*billete_1));
+									
+							bucle_accion_carga_monto=false;
+							cout<<"\n";
+							system("pause");
+						break;
+						
+						case 2:
+							cout<<"\nSe cancelaron los cambios";
+							bucle_accion_carga_monto=false;
+							cout<<"\n";
+							system("pause");
+						break;
+						
+						default:
+							system("cls");
+							cout<<"\nERROR: Selecione alguna de las opciones.";
+							cout<<"\n";
+							system("pause");
+							
+						break;
+					}
+				}
+
+			break;
+					
+			case 5:
+				system("cls");
+				cout<<"Billete de: "<< billete_2<<".\n";
+				cout<<"Valores en carga:"<<"        "<<"Cantidad: "<<carga_cantidad_billete_2_cargar<<"   Total: "<<carga_total_billete_2_cargar;
+				cout<<"\n";
+				system("pause");
+				cout<<"\nCantidad que desea cargar: ";
+				cin>>cantidad_de_carga;
+				cout<<"\nTotal de la carga : "<<(cantidad_de_carga*billete_2);
+				bucle_accion_carga_monto=true;
+				while (bucle_accion_carga_monto==true)
+				{
+					cout<<"\nDesea confirmar la carga:\n 1---> SI.\n 2---> NO.";
+					cout<<"\n";
+					cout<<"\nAccion a realizar: ";
+					cin>>accion_carga_monto;
+					switch(accion_carga_monto)
+					{
+						case 1:
+							cout<<"\nSe realizaron los cambios";
+							carga_cantidad_billete_2_cargar=carga_cantidad_billete_2_cargar+cantidad_de_carga;
+							carga_total_billete_2_cargar=(carga_cantidad_billete_2_cargar*billete_2);
+			
+							saldo_cantidad_billete_2_cargar =(carga_cantidad_billete_2_cargar) ;
+							saldo_total_billete_2_cargar =((saldo_cantidad_billete_2_cargar*billete_2)) ;
+									
+							bucle_accion_carga_monto=false;
+							cout<<"\n";
+							system("pause");
+						break;
+						
+						case 2:
+							cout<<"\nSe cancelaron los cambios";
+							bucle_accion_carga_monto=false;
+							cout<<"\n";
+							system("pause");
+						break;
+						
+						default:
+							system("cls");
+							cout<<"\nERROR: Selecione alguna de las opciones.";
+							cout<<"\n";
+							system("pause");
+							
+						break;
+					}
+				}
+
+			break;
+					
+			case 6:
+				system("cls");
+				cout<<"Billete de: "<< billete_3<<".\n";
+				cout<<"Valores en carga:"<<"        "<<"Cantidad: "<<carga_cantidad_billete_3_cargar<<"   Total: "<<carga_total_billete_3_cargar;
+				cout<<"\n";
+				system("pause");
+				cout<<"\nCantidad que desea cargar: ";
+				cin>>cantidad_de_carga;
+				cout<<"\nTotal de la carga : "<<(cantidad_de_carga*billete_3);
+				bucle_accion_carga_monto=true;
+				while (bucle_accion_carga_monto==true)
+				{
+					cout<<"\nDesea confirmar la carga:\n 1---> SI.\n 2---> NO.";
+					cout<<"\n";
+					cout<<"\nAccion a realizar: ";
+					cin>>accion_carga_monto;
+					switch(accion_carga_monto)
+					{
+						case 1:
+							cout<<"\nSe realizaron los cambios";
+							carga_cantidad_billete_3_cargar=carga_cantidad_billete_3_cargar+cantidad_de_carga;
+							carga_total_billete_3_cargar=(carga_cantidad_billete_3_cargar*billete_3);
+							
+							saldo_cantidad_billete_3_cargar =(carga_cantidad_billete_3_cargar) ;
+							saldo_total_billete_3_cargar =((saldo_cantidad_billete_3_cargar*billete_3)) ;
+							
+							bucle_accion_carga_monto=false;
+							cout<<"\n";
+							system("pause");
+						break;
+						
+						case 2:
+							cout<<"\nSe cancelaron los cambios";
+							bucle_accion_carga_monto=false;
+							cout<<"\n";
+							system("pause");
+						break;
+						
+						default:
+							system("cls");
+							cout<<"\nERROR: Selecione alguna de las opciones.";
+							cout<<"\n";
+							system("pause");
+							
+						break;
+					}
+				}
+			break;
+					
+			case 7:
+				system("cls");
+				cout<<"Billete de: "<< billete_4<<".\n";
+				cout<<"Valores en carga:"<<"        "<<"Cantidad: "<<carga_cantidad_billete_4_cargar<<"   Total: "<<carga_total_billete_4_cargar;
+				cout<<"\n";
+				system("pause");
+				cout<<"\nCantidad que desea cargar: ";
+				cin>>cantidad_de_carga;
+				cout<<"\nTotal de la carga : "<<(cantidad_de_carga*billete_4);
+				bucle_accion_carga_monto=true;
+				while (bucle_accion_carga_monto==true)
+				{
+					cout<<"\nDesea confirmar la carga:\n 1---> SI.\n 2---> NO.";
+					cout<<"\n";
+					cout<<"\nAccion a realizar: ";
+					cin>>accion_carga_monto;
+					switch(accion_carga_monto)
+					{
+						case 1:
+							cout<<"\nSe realizaron los cambios";
+							carga_cantidad_billete_4_cargar=carga_cantidad_billete_4_cargar+cantidad_de_carga;
+							carga_total_billete_4_cargar=(carga_cantidad_billete_4_cargar*billete_4);		
+							
+							saldo_cantidad_billete_4_cargar =(carga_cantidad_billete_4_cargar) ;
+							saldo_total_billete_4_cargar =((saldo_cantidad_billete_4_cargar*billete_4)) ;
+							
+							bucle_accion_carga_monto=false;
+							cout<<"\n";
+							system("pause");
+						break;
+						
+						case 2:
+							cout<<"\nSe cancelaron los cambios";
+							bucle_accion_carga_monto=false;
+							cout<<"\n";
+							system("pause");
+						break;
+						
+						default:
+							system("cls");
+							cout<<"\nERROR: Selecione alguna de las opciones.";
+							cout<<"\n";
+							system("pause");
+							
+						break;
+					}
+				}
+
+			break;
+					
+			case 8:
+				system("cls");
+				cout<<"Billete de: "<< billete_5<<".\n";
+				cout<<"Valores en carga:"<<"        "<<"Cantidad: "<<carga_cantidad_billete_5_cargar<<"   Total: "<<carga_total_billete_5_cargar;
+				cout<<"\n";
+				system("pause");
+				cout<<"\nCantidad que desea cargar: ";
+				cin>>cantidad_de_carga;
+				cout<<"\nTotal de la carga : "<<(cantidad_de_carga*billete_5);
+				bucle_accion_carga_monto=true;
+				while (bucle_accion_carga_monto==true)
+				{
+					cout<<"\nDesea confirmar la carga:\n 1---> SI.\n 2---> NO.";
+					cout<<"\n";
+					cout<<"\nAccion a realizar: ";
+					cin>>accion_carga_monto;
+					switch(accion_carga_monto)
+					{
+						case 1:
+							cout<<"\nSe realizaron los cambios";
+							carga_cantidad_billete_5_cargar=carga_cantidad_billete_5_cargar+cantidad_de_carga;
+							carga_total_billete_5_cargar=(carga_cantidad_billete_5_cargar*billete_5);
+							
+							
+							saldo_cantidad_billete_5_cargar =(carga_cantidad_billete_5_cargar) ;
+							saldo_total_billete_5_cargar =((saldo_cantidad_billete_5_cargar*billete_5)) ;
+	
+							
+							bucle_accion_carga_monto=false;
+							cout<<"\n";
+							system("pause");
+						break;
+						
+						case 2:
+							cout<<"\nSe cancelaron los cambios";
+							bucle_accion_carga_monto=false;
+							cout<<"\n";
+							system("pause");
+						break;
+						
+						default:
+							system("cls");
+							cout<<"\nERROR: Selecione alguna de las opciones.";
+							cout<<"\n";
+							system("pause");
+							
+						break;
+					}
+				}
+			break;
+			
+			case 9:
+				system("cls");
+				cout<<"Confirmar.\n";
+				
+				saldo_cantidad_moneda_total_cargar =(saldo_cantidad_moneda_1_cargar+saldo_cantidad_moneda_2_cargar+saldo_cantidad_moneda_3_cargar) ;
+				saldo_total_moneda_total_cargar =((saldo_cantidad_moneda_1_cargar*moneda_1)+(saldo_cantidad_moneda_2_cargar*moneda_2)+(saldo_cantidad_moneda_3_cargar*moneda_3)) ;
+	
+				saldo_cantidad_billete_total_cargar =(saldo_cantidad_billete_1_cargar+saldo_cantidad_billete_2_cargar+saldo_cantidad_billete_3_cargar+saldo_cantidad_billete_4_cargar+saldo_cantidad_billete_5_cargar) ;
+				saldo_total_billete_total_cargar =((saldo_cantidad_billete_1_cargar*billete_1)+(saldo_cantidad_billete_2_cargar*billete_2)+(saldo_cantidad_billete_3_cargar*billete_3)+(saldo_cantidad_billete_4_cargar*billete_4)+(saldo_cantidad_billete_5_cargar*billete_5)) ;
+				
+				//-------------------------------------- Se le asigna las variables locales de saldo a las globales.
+				saldo_total_moneda_1=saldo_total_moneda_1_cargar;
+				saldo_total_moneda_2=saldo_total_moneda_2_cargar;
+				saldo_total_moneda_3=saldo_total_moneda_3_cargar;
+				saldo_total_moneda_total=saldo_total_moneda_total_cargar;
+				saldo_total_billete_1=saldo_total_billete_1_cargar;
+				saldo_total_billete_2=saldo_total_billete_2_cargar;
+				saldo_total_billete_3=saldo_total_billete_3_cargar;
+				saldo_total_billete_4=saldo_total_billete_4_cargar;
+				saldo_total_billete_5=saldo_total_billete_5_cargar;
+				saldo_total_billete_total=saldo_total_billete_total_cargar;
+				
+				saldo_cantidad_moneda_1=saldo_cantidad_moneda_1_cargar;
+				saldo_cantidad_moneda_2=saldo_cantidad_moneda_2_cargar;
+				saldo_cantidad_moneda_3=saldo_cantidad_moneda_3_cargar;
+				saldo_cantidad_moneda_total=saldo_cantidad_moneda_total_cargar;
+				saldo_cantidad_billete_1=saldo_cantidad_billete_1_cargar;
+				saldo_cantidad_billete_2=saldo_cantidad_billete_2_cargar;
+				saldo_cantidad_billete_3=saldo_cantidad_billete_3_cargar;
+				saldo_cantidad_billete_4=saldo_cantidad_billete_4_cargar;
+				saldo_cantidad_billete_5=saldo_cantidad_billete_5_cargar;
+				saldo_cantidad_billete_total=saldo_cantidad_billete_total_cargar;
+				cout<<"\n Se completo la carga.\n";
+				system("pause");
+		
+				cout<<"\n";
+				cout<<"__________________SALDO ACUAL__________________\n";
+				cout<<"                    CANTIDAD     TOTAL";	
+				cout<<"\n";	
+				cout<<"\n Moneda de: "<< moneda_1<<"          "<<saldo_cantidad_moneda_1<<"         "<<saldo_total_moneda_1;
+				cout<<"\n Moneda de: "<< moneda_2<<"          " <<saldo_cantidad_moneda_2<<"         "<<saldo_total_moneda_2;
+				cout<<"\n Moneda de: "<< moneda_3<<"          "<<saldo_cantidad_moneda_3<<"         "<<saldo_total_moneda_3;
+				cout<<"\n Total de monedas:        "<<saldo_cantidad_moneda_total<<"         "<<saldo_total_moneda_total;
+				cout<<"\n Billete de: "<< billete_1<<"         "<<saldo_cantidad_billete_1<<"         "<<saldo_total_billete_1;
+				cout<<"\n Billete de: "<< billete_2<<"         "<<saldo_cantidad_billete_2<<"         "<<saldo_total_billete_2;
+				cout<<"\n Billete de: "<< billete_3<<"         "<<saldo_cantidad_billete_3<<"         "<<saldo_total_billete_3;
+				cout<<"\n Billete de: "<< billete_4<<"         "<<saldo_cantidad_billete_4<<"         "<<saldo_total_billete_4;
+				cout<<"\n Billete de: "<< billete_5<<"         "<<saldo_cantidad_billete_5<<"         "<<saldo_total_billete_5;
+				cout<<"\n Total de billetes:       "<<saldo_cantidad_billete_total<<"         "<<saldo_total_billete_total;
+				cout<<"\n";
+				cout<<"\n TOTAL DEL DINERO  ------------->  "<<(saldo_total_billete_total+saldo_total_moneda_total);
+				cout<<"\n";
+				cout<<"\n";
+				system("pause");
+				accion_carga=false;
+			break;
+			
+			case 10:
+				system("cls");
+				cout<<"Cancelar.\n";
+				
+				cout<<"\n Se cancelo la carga.\n";
+				system("pause");
+		
+				cout<<"\n";
+				cout<<"__________________SALDO ACUAL__________________\n";
+				cout<<"                    CANTIDAD     TOTAL";	
+				cout<<"\n";	
+				cout<<"\n Moneda de: "<< moneda_1<<"          "<<saldo_cantidad_moneda_1<<"         "<<saldo_total_moneda_1;
+				cout<<"\n Moneda de: "<< moneda_2<<"          " <<saldo_cantidad_moneda_2<<"         "<<saldo_total_moneda_2;
+				cout<<"\n Moneda de: "<< moneda_3<<"          "<<saldo_cantidad_moneda_3<<"         "<<saldo_total_moneda_3;
+				cout<<"\n Total de monedas:        "<<saldo_cantidad_moneda_total<<"         "<<saldo_total_moneda_total;
+				cout<<"\n Billete de: "<< billete_1<<"         "<<saldo_cantidad_billete_1<<"         "<<saldo_total_billete_1;
+				cout<<"\n Billete de: "<< billete_2<<"         "<<saldo_cantidad_billete_2<<"         "<<saldo_total_billete_2;
+				cout<<"\n Billete de: "<< billete_3<<"         "<<saldo_cantidad_billete_3<<"         "<<saldo_total_billete_3;
+				cout<<"\n Billete de: "<< billete_4<<"         "<<saldo_cantidad_billete_4<<"         "<<saldo_total_billete_4;
+				cout<<"\n Billete de: "<< billete_5<<"         "<<saldo_cantidad_billete_5<<"         "<<saldo_total_billete_5;
+				cout<<"\n Total de billetes:       "<<saldo_cantidad_billete_total<<"         "<<saldo_total_billete_total;
+				cout<<"\n";
+				cout<<"\n TOTAL DEL DINERO  ------------->  "<<(saldo_total_billete_total+saldo_total_moneda_total);
+				cout<<"\n";
+				cout<<"\n";
+				system("pause");
+				accion_carga=false;
+			break;
+					
+			default:
+				system("cls");
+				cout<<"ERROR: La accion escogida no es valida\n";
+				system("pause");
+				
+			break;
+				
+		}	
+		
+		saldo_cantidad_moneda_total_cargar =(saldo_cantidad_moneda_1_cargar+saldo_cantidad_moneda_2_cargar+saldo_cantidad_moneda_3_cargar) ;
+		saldo_total_moneda_total_cargar =((saldo_cantidad_moneda_1_cargar*moneda_1)+(saldo_cantidad_moneda_2_cargar*moneda_2)+(saldo_cantidad_moneda_3_cargar*moneda_3)) ;
+		
+		saldo_cantidad_billete_total_cargar =(saldo_cantidad_billete_1_cargar+saldo_cantidad_billete_2_cargar+saldo_cantidad_billete_3_cargar+saldo_cantidad_billete_4_cargar+saldo_cantidad_billete_5_cargar) ;
+		saldo_total_billete_total_cargar =((saldo_cantidad_billete_1_cargar*billete_1)+(saldo_cantidad_billete_2_cargar*billete_2)+(saldo_cantidad_billete_3_cargar*billete_3)+(saldo_cantidad_billete_4_cargar*billete_4)+(saldo_cantidad_billete_5_cargar*billete_5)) ;
+
+	
+	}
 }
 
 
